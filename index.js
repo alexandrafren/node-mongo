@@ -22,7 +22,7 @@ MongoClient.connect(url, (err, client) => {
         console.log(result.ops)
 
         collection.find({}).toArray((err,docs) => {
-            asssert.equal(err,null);
+            assert.equal(err,null);
             console.log('Found:\n')
             console.log(docs);
 
